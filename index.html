@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Enter your location"
+            class="input-box"/>
+
+          <button class="fa-solid fa-magnifying-glass" id="searchbtn"></button>
+        </div>
+      </div>
+
+      <div class="location-not-found">
+        <h1>Sorry, location not found!!!</h1>
+        <img src="icons/404.png" alt="404 error">
+      </div>
+
+      <div class="weather-body">
+        <img src="icons/cloud.png" alt="weather-img" class="weather-img">
+
+        <div class="weather-box">
+            <p class="temparature">0 <sup>°C</sup></p>
+            <p class="description">Clear</p>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="text">
+                    <span id="humidity">0%</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span class="wind-speed">00Km/h</span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/51e481d614.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
